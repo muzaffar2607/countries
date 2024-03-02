@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/countries.css">
+    <title>Countries</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav>
+                <h2 class="header-banner">Where is the world?</h2>
+                <div class="page-mode" id="themePage" onclick="modePage()">
+                    <img id="mode-image" name="mode-image" src="img/icons8-moon-50.png">
+                    <label for="mode-image" id="darkMode">Dark Mode</label>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="filtr">
+                <div class="search-country">
+                    <img src="img/icons8-search.svg" >
+                    <input type="text" placeholder="Search for a country..." id="searching">
+                    <h2 id="search-trash">X</h2>
+                </div>
+                <div class="search-continent" onclick="searchContinent()">
+                    <div class="filter-main">
+                        <p id="filter-continent">Filter by Continent</p>
+                        <img src="img/icons8-chevron-24.png" id="filter-chevron">
+                    </div>
+                    <div id="continent-filt">
+                        <div id="continent-filter-item1">Asia</div>
+                        <div id="continent-filter-item2">Africa</div>
+                        <div id="continent-filter-item3">North America</div>
+                        <div id="continent-filter-item4">South America</div>
+                        <div id="continent-filter-item5">Antarctica</div>
+                        <div id="continent-filter-item6">Europe</div>
+                        <div id="continent-filter-item7">Oceania</div>
+                        <div id="continent-filter-item8">All</div>
+                    </div>
+                </div>
+            </div>
+            <div id="countries">
+                <!-- <div class="countries-item">
+                    <img src="" class="country-flag">
+                    <div class="country-name">
+                        <h5 class="country-name-text">Country Name: </h5>
+                        <p class="countryName"></p>
+                    </div>
+                    <div class="country-population">
+                        <h5 class="country-pop-text">Population: </h5>
+                        <p class="countryPopulat"></p>
+                    </div>
+                    <div class="country-continent">
+                        <h5 class="country-continent-text">Continent: </h5>
+                        <p class="countryContinent"></p>
+                    </div>
+                    <div class="country-capital">
+                        <h5 class="country-capital-text">Capital: </h5>
+                        <p class="countryCapital"></p>
+                    </div>
+                </div> -->
+                
+            </div>
+        </div>
+    </main>
+
+    <script src="js/countries.js"></script>
+</body>
+</html>

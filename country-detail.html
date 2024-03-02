@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/country-detail.css">
+    <title>Country Info</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav>
+                <h2 class="header-banner">Where is the world?</h2>
+                <div class="page-mode" id="themePage" onclick="modePage()">
+                    <img id="mode-image" name="mode-image" src="img/icons8-moon-50.png">
+                    <label for="mode-image" id="darkMode">Dark Mode</label>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="information">
+                <a href="http://127.0.0.1:5500/countries.html" id="back">
+                    <img src="img/icons8-arrow-16.png" id="arrow">
+                    <p class="back-text">Back</p>
+                </a>
+
+                <div class="country-information">
+                    <img src="" id="country-flag">
+                    <div class="info-text">
+                        <h1 id="country-name"></h1>
+                        <div class="plus-information">
+                            <div class="main-information">
+                                <div class="countryInfo">
+                                    <h4 class="country-text">Native Name:</h4>
+                                    <p id="nativeName"></p>
+                                </div>
+                                <div class="countryInfo">
+                                    <h4 class="country-text">Population:</h4>
+                                    <p id="population"></p>
+                                </div>
+                                <div class="countryInfo">
+                                    <h4 class="country-text">Region:</h4>
+                                    <p id="country"></p>
+                                </div>
+                                <div class="countryInfo">
+                                    <h4 class="country-text">Sub Region:</h4>
+                                    <p id="subRegion"></p>
+                                </div>
+                            </div>
+                            <div class="main-information">
+                                <div class="countryInfo">
+                                    <h4 class="country-text">Capital:</h4>
+                                    <p id="capital"></p>
+                                </div>
+                                <div class="countryInfo">
+                                    <h4 class="country-text">Top Level Domain:</h4>
+                                    <p id="domain"></p>
+                                </div>
+                                <div class="countryInfo">
+                                    <h4 class="country-text">Currencies:</h4>
+                                    <p id="currencies"></p>
+                                </div>
+                                <div class="countryInfo">
+                                    <h4 class="country-text">Language:</h4>
+                                    <p id="language"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border-country">
+                            <h4 class="border-country-text">Border Countries:</h4>
+                            <div id="countries-name">
+                                <!-- <p class="countries-name-text">waddwad</p> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/country-detail.js"></script>
+</body>
+</html>
